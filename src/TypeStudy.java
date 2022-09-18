@@ -1,6 +1,9 @@
-import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.ArrayList;
 import java.util.Comparator;
+import java.util.List;
+import java.util.HashMap;
+import java.util.HashSet;
 
 public class TypeStudy {
     public static void main(String[] args) {
@@ -10,6 +13,9 @@ public class TypeStudy {
         Str();
         Arr();
         Lst();
+        MapFunc();
+        SetFunc();
+        EnumFunc();
     }
 
     static void Number() {
@@ -115,6 +121,83 @@ public class TypeStudy {
         System.out.println(pitches);
         pitches.sort(Comparator.reverseOrder());
         System.out.println(pitches);
+
+        System.out.println();
+    }
+
+    static void MapFunc() {
+        System.out.println("3-8 Map");
+
+        HashMap<String, String> map = new HashMap<>();
+        map.put("people", "사람");
+        map.put("baseball", "야구");
+
+        System.out.println(map.get("people"));
+        System.out.println(map.get("java"));
+        System.out.println(map.containsKey("people"));
+        System.out.println(map.remove("people"));
+        System.out.println(map.size());
+        System.out.println(map.keySet());
+        System.out.println(map);
+
+        map.put("bus", "버스");
+        map.put("pitcher", "투수");
+
+        System.out.println(map);
+        List<String> keyList = new ArrayList<>(map.keySet());
+        System.out.println(keyList);
+
+        System.out.println();
+    }
+
+    static void SetFunc() {
+        // *Method*
+        // .add(), .addAll(), .remove()
+        System.out.println("3-9 Set");
+
+        HashSet<String> set = new HashSet<>(Arrays.asList("H", "e", "l", "l", "o"));
+        System.out.println(set);
+
+        HashSet<Integer> s1 = new HashSet<>(Arrays.asList(1, 2, 3, 4, 5, 6));
+        HashSet<Integer> s2 = new HashSet<>(Arrays.asList(4, 5, 6, 7, 8, 9));
+        HashSet<Integer> union = new HashSet<>(s1);
+        union.addAll(s2);
+        System.out.println(union);
+
+        System.out.println();
+    }
+
+    enum BaseBallType {
+        PITCHER,
+        CATCHER,
+        HITTER
+    };
+
+    static int getBackNumber(BaseBallType type) {
+        // NC Dinos
+        if (type == BaseBallType.PITCHER) {
+            // 구창모 선수
+            return 59;
+        }
+        else if (type == BaseBallType.CATCHER) {
+            // 양의지 선수
+            return 25;
+        }
+        else if(type== BaseBallType.HITTER){
+            // 박민우 선수
+            return 2;
+        }
+        else {
+            // rally dinos
+            return 9;
+        }
+    }
+
+    static void EnumFunc() {
+        System.out.println("3-10 Enum");
+
+        int backNumber = getBackNumber(BaseBallType.CATCHER);
+        System.out.printf("When type is catcher, back number is %d\n", backNumber);
 
         System.out.println();
     }
