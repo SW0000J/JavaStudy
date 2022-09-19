@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fc6057a6-511f-4096-97c4-dad78b07c008" name="Changes" comment="Study java's type">
+    <list default="true" id="fc6057a6-511f-4096-97c4-dad78b07c008" name="Changes" comment="Study java's control statement">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TypeStudy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TypeStudy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TypeStudy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JumpToJava.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +46,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1663394688569</updated>
-      <workItem from="1663394691688" duration="13106000" />
+      <workItem from="1663394691688" duration="13472000" />
     </task>
     <task id="LOCAL-00001" summary="Study java's type">
       <created>1663503373288</created>
@@ -55,7 +55,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663503373288</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Study java's control statement">
+      <created>1663582189026</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1663582189026</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -74,7 +81,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Study java's type" />
-    <option name="LAST_COMMIT_MESSAGE" value="Study java's type" />
+    <MESSAGE value="Study java's control statement" />
+    <option name="LAST_COMMIT_MESSAGE" value="Study java's control statement" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.HashMap;
 import java.util.HashSet;
 
-public class TypeStudy {
+public class JumpToJava {
     public static void main(String[] args) {
         Number();
         Bool();
