@@ -16,6 +16,7 @@ public class TypeStudy {
         MapFunc();
         SetFunc();
         EnumFunc();
+        ConditionFunc();
     }
 
     static void Number() {
@@ -198,6 +199,29 @@ public class TypeStudy {
 
         int backNumber = getBackNumber(BaseBallType.CATCHER);
         System.out.printf("When type is catcher, back number is %d\n", backNumber);
+
+        System.out.println();
+    }
+
+    static void ConditionFunc() {
+        System.out.println("3-10 Enum");
+
+        int x = 1;
+        int y = 3;
+
+        if (x == y) {
+            System.out.println("x and y are same");
+        }
+        else{
+            System.out.println("x and y are not same");
+        }
+
+        String[] baseballTeams = {"NC", "SSG", "Doosan", "KT", "LG", "KIWOOM", "HANWHA", "LOTTE", "SAMSUNG", "KIA"};
+
+        System.out.println("KBO Teams!");
+        for (String team : baseballTeams){
+            System.out.println(team);
+        }
 
         System.out.println();
     }
