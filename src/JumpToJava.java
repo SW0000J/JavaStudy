@@ -204,7 +204,7 @@ public class JumpToJava {
     }
 
     static void ConditionFunc() {
-        System.out.println("3-10 Enum");
+        System.out.println("4 Control Statement");
 
         int x = 1;
         int y = 3;
